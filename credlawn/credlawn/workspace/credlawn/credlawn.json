@@ -1,0 +1,211 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"YpGCeLfign\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Hello Team Credlawn !</b></span>\",\"col\":12}},{\"id\":\"oFB4l28FMU\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rC3NpD0z58\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign Leads Dashboard\",\"col\":3}},{\"id\":\"b7abeqw4NZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign Leads List\",\"col\":3}},{\"id\":\"ydpQdNFuOH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Campaign Lead\",\"col\":3}},{\"id\":\"aY4fvQAg_L\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Email List\",\"col\":3}},{\"id\":\"Z_75HKtwhU\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"MO6W1jx8X5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Adobe\",\"col\":3}},{\"id\":\"BuQ06yev6A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Click Details\",\"col\":3}},{\"id\":\"aB1t9GGvki\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":3}},{\"id\":\"wBe7wDv4Rf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"lfcMYtigCU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cards\",\"col\":3}},{\"id\":\"Ox2thdCk1A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Case Punching\",\"col\":3}},{\"id\":\"J7R9tDgraE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Calling Data\",\"col\":3}},{\"id\":\"KyVc87gNWB\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XMcd25KdQZ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XuL7dFF68q\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports !</b></span>\",\"col\":12}},{\"id\":\"20FvL3seGK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ll1cOZ6Aow\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign Lead Summary\",\"col\":4}},{\"id\":\"zW_LYNcDKd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Campaign Pending Leads\",\"col\":4}}]",
+ "creation": "2024-10-06 16:42:01.646081",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "notification-with-indicator",
+ "idx": 3,
+ "indicator_color": "green",
+ "is_hidden": 1,
+ "label": "Credlawn",
+ "links": [
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity Log",
+   "link_count": 0,
+   "link_to": "Activity Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Access Log",
+   "link_count": 0,
+   "link_to": "Access Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Permissions Manager",
+   "link_count": 0,
+   "link_to": "permission-manager",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Permissions",
+   "link_count": 0,
+   "link_to": "User Permission",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Permission for Page and Report",
+   "link_count": 0,
+   "link_to": "Role Permission for Page and Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "User",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Permitted Documents For User",
+   "link_count": 0,
+   "link_to": "Permitted Documents For User",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "DocShare",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Document Share Report",
+   "link_count": 0,
+   "link_to": "Document Share Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "DocShare",
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-12-07 16:21:43.601948",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Credlawn",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Login",
+   "label": "Case Punching",
+   "link_to": "Case Punching",
+   "stats_filter": "[[\"Case Punching\",\"punching_date\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "format": "{} Pending",
+   "label": "Campaign Leads List",
+   "link_to": "Blasting",
+   "stats_filter": "[[\"Blasting\",\"lead_status\",\"=\",\"Pending\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} New Leads",
+   "label": "Calling Data",
+   "link_to": "Calling Data",
+   "stats_filter": "[[\"Calling Data\",\"lead_status\",\"=\",\"New Lead\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Today",
+   "label": "Click Details",
+   "link_to": "Redirect",
+   "stats_filter": "[[\"Redirect\",\"timestamp\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Campaign Pending Leads",
+   "link_to": "Campaign Pending Leads Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Campaign Lead Summary",
+   "link_to": "Campaign Leads Summary",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Campaign Leads Dashboard",
+   "link_to": "Blasting",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Active",
+   "label": "Employee",
+   "link_to": "Employee",
+   "stats_filter": "[[\"Employee\",\"employment_status\",\"=\",\"Active\",false],[\"Employee\",\"department\",\"!=\",\"Management\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Cards",
+   "label": "Cards",
+   "link_to": "Cards",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Adobe",
+   "link_to": "Adobe",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Campaign Lead",
+   "link_to": "Blasting",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} New",
+   "label": "Email List",
+   "link_to": "Communication",
+   "stats_filter": "[[\"Communication\",\"status\",\"=\",\"Open\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Credlawn"
+}

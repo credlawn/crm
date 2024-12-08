@@ -1,0 +1,334 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:reference_no",
+ "creation": "2024-10-09 03:59:39.263226",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_details_section",
+  "creation_date",
+  "decision_date",
+  "column_break_srix",
+  "customer_name",
+  "reference_no",
+  "column_break_gvxo",
+  "customer_type",
+  "changed_value",
+  "column_break_birt",
+  "city",
+  "bank_details_section",
+  "promo_code",
+  "product_code",
+  "column_break_gfyb",
+  "dap_final_flag",
+  "lc1_code",
+  "column_break_ozhs",
+  "qde_status",
+  "lc2_code",
+  "column_break_citg",
+  "vkyc_status",
+  "current_status",
+  "additional_details_section",
+  "dropoff_reason",
+  "vkyc_expiry_date",
+  "column_break_nkwm",
+  "curable_flag",
+  "vkyc_link",
+  "column_break_vyqu",
+  "decline_code",
+  "decline_description",
+  "column_break_wqvg",
+  "inprocess_classification",
+  "other_details_section",
+  "bkyc_status",
+  "column_break_dsqv",
+  "bkyc_status_reason",
+  "column_break_gdwo",
+  "sm_code",
+  "column_break_pels",
+  "company_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_srix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "label": "Creation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gvxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Select",
+   "label": "Customer Type",
+   "options": "\nETB\nNTB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_birt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "default": "-",
+   "fieldname": "promo_code",
+   "fieldtype": "Select",
+   "label": "Promo Code",
+   "options": "LB\nFT\nC2\nCD\nIT\nNC\nSI\nBC\n-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gfyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "lc1_code",
+   "fieldtype": "Data",
+   "label": "LC-1 Code",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "dap_final_flag",
+   "fieldtype": "Select",
+   "label": "DAP Final Flag",
+   "options": "-\nYes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ozhs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "lc2_code",
+   "fieldtype": "Data",
+   "label": "LC-2 Code",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "qde_status",
+   "fieldtype": "Select",
+   "label": "QDE Status",
+   "options": "Ok\n-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_citg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "vkyc_status",
+   "fieldtype": "Select",
+   "label": "VKYC Status",
+   "options": "Pending\nSuccess\nExpired\nFailed\nBiometric\n-",
+   "read_only": 1
+  },
+  {
+   "default": "Incomplete",
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "Incomplete\nTeam Pending\nBank Pending\nKYC Pending\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_details_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Details"
+  },
+  {
+   "default": "-",
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "label": "Product Code",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "dropoff_reason",
+   "fieldtype": "Select",
+   "label": "Drop-off Reason",
+   "options": "-\nIncomplete\nAddress Change",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nkwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "curable_flag",
+   "fieldtype": "Select",
+   "label": "Curable Flag",
+   "options": "-\nCurable\nNon Curable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vyqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vkyc_expiry_date",
+   "fieldtype": "Datetime",
+   "label": "VKYC Expire Date"
+  },
+  {
+   "default": "-",
+   "fieldname": "decline_code",
+   "fieldtype": "Data",
+   "label": "Decline Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wqvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "vkyc_link",
+   "fieldtype": "Data",
+   "label": "VKYC Link",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "decline_description",
+   "fieldtype": "Data",
+   "label": "Decline Descripation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "default": "-",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dsqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gdwo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "bkyc_status",
+   "fieldtype": "Data",
+   "label": "BKYC Status",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "inprocess_classification",
+   "fieldtype": "Select",
+   "label": "Inprocess Classification",
+   "options": "Sales Queue\nAFU Queue\nCPV Queue\nRIC Queue\nSystem Queue\nClosed\n-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pels",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-",
+   "fieldname": "bkyc_status_reason",
+   "fieldtype": "Data",
+   "label": "BKYC Status Reason",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "sm_code",
+   "fieldtype": "Data",
+   "label": "SM Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "label": "Decision Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "changed_value",
+   "fieldtype": "Small Text",
+   "label": "Changed Value"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-07 19:40:10.701762",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Adobe Dump",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

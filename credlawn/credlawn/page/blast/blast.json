@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2024-10-06 01:46:25.529296",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2024-10-17 21:31:56.312870",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "blast",
+ "owner": "Administrator",
+ "page_name": "blast",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Blasting List"
+}

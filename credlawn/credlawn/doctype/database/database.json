@@ -1,0 +1,372 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:mobile_no",
+ "creation": "2024-11-08 17:22:18.196039",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_section",
+  "customer_name",
+  "mobile_no",
+  "column_break_ccvt",
+  "data_source",
+  "column_break_dqmv",
+  "email",
+  "other_details_section",
+  "city",
+  "column_break_pfeq",
+  "ctc",
+  "column_break_dwit",
+  "company_name",
+  "data_status_section",
+  "overall_status",
+  "sms_status",
+  "bank_login",
+  "column_break_prmk",
+  "usage_count",
+  "rcs_status",
+  "bank_login_status",
+  "column_break_xupg",
+  "platform_usage_count",
+  "whatsapp_status",
+  "usage_history_section",
+  "date_1",
+  "date_2",
+  "date_3",
+  "date_4",
+  "date_5",
+  "date_6",
+  "date_7",
+  "date_8",
+  "date_9",
+  "date_10",
+  "column_break_ozot",
+  "platform_1",
+  "platform_2",
+  "platform_3",
+  "platform_4",
+  "platform_5",
+  "platform_6",
+  "platform_7",
+  "platform_8",
+  "platform_9",
+  "platform_10",
+  "section_break_cpdg",
+  "data_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_ccvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Mobile No",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_dqmv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Source"
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_pfeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ctc",
+   "fieldtype": "Data",
+   "label": "CTC"
+  },
+  {
+   "fieldname": "column_break_dwit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "data_status_section",
+   "fieldtype": "Section Break",
+   "label": "Data Status"
+  },
+  {
+   "fieldname": "column_break_prmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "usage_count",
+   "fieldtype": "Int",
+   "label": "Usage Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xupg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "platform_usage_count",
+   "fieldtype": "Int",
+   "label": "Platform Usage Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "usage_history_section",
+   "fieldtype": "Section Break",
+   "is_virtual": 1,
+   "label": "Usage History",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "column_break_ozot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "platform_2",
+   "fieldtype": "Data",
+   "label": "Platform 2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_1",
+   "fieldtype": "Data",
+   "label": "Platform 1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_1",
+   "fieldtype": "Date",
+   "label": "Date 1",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "date_2",
+   "fieldtype": "Date",
+   "label": "Date 2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_3",
+   "fieldtype": "Date",
+   "label": "Date 3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_4",
+   "fieldtype": "Date",
+   "label": "Date 4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_5",
+   "fieldtype": "Date",
+   "label": "Date 5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_6",
+   "fieldtype": "Date",
+   "label": "Date 6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_7",
+   "fieldtype": "Date",
+   "label": "Date 7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_8",
+   "fieldtype": "Date",
+   "label": "Date 8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_9",
+   "fieldtype": "Date",
+   "label": "Date 9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_10",
+   "fieldtype": "Date",
+   "label": "Date 10",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_3",
+   "fieldtype": "Data",
+   "label": "Platform 3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_4",
+   "fieldtype": "Data",
+   "label": "Platform 4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_5",
+   "fieldtype": "Data",
+   "label": "Platform 5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_6",
+   "fieldtype": "Data",
+   "label": "Platform 6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_7",
+   "fieldtype": "Data",
+   "label": "Platform 7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_8",
+   "fieldtype": "Data",
+   "label": "Platform 8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_9",
+   "fieldtype": "Data",
+   "label": "Platform 9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "platform_10",
+   "fieldtype": "Data",
+   "label": "Platform 10",
+   "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "sms_status",
+   "fieldtype": "Select",
+   "label": "SMS Status",
+   "options": "New\nUsed",
+   "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "rcs_status",
+   "fieldtype": "Select",
+   "label": "RCS Status",
+   "options": "New\nUsed",
+   "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "whatsapp_status",
+   "fieldtype": "Select",
+   "label": "WhatsApp Status",
+   "options": "New\nUsed",
+   "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "overall_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Overall Status",
+   "options": "New\nUsed\nPartial Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "default": "No",
+   "fieldname": "bank_login",
+   "fieldtype": "Select",
+   "label": "Bank Login",
+   "options": "No\nYes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_login_status",
+   "fieldtype": "Data",
+   "label": "Bank Login Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cpdg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "New",
+   "fieldname": "data_type",
+   "fieldtype": "Data",
+   "label": "Data Type"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-19 16:35:32.112975",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Database",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name"
+}

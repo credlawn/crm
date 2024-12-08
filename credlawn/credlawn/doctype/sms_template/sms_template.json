@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:template_name",
+ "creation": "2024-11-11 19:25:48.600441",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "template_details_section",
+  "template_name",
+  "template_id",
+  "template_type",
+  "column_break_qyyd",
+  "sender_id",
+  "variable_count",
+  "column_break_uznl",
+  "dlt_template_id",
+  "column_break_xcba",
+  "status",
+  "variable_field_section",
+  "var_1_name",
+  "var_1_value",
+  "column_break_slmc",
+  "var_2_name",
+  "var_2_value",
+  "column_break_oiwk",
+  "var_3_name",
+  "var_3_value",
+  "column_break_xnar",
+  "var_4_name",
+  "var_4_value",
+  "section_break_tjvl",
+  "content"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "label": "Template Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "template_id",
+   "fieldtype": "Data",
+   "label": "Template ID"
+  },
+  {
+   "fieldname": "column_break_qyyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sender_id",
+   "fieldtype": "Data",
+   "label": "Sender ID"
+  },
+  {
+   "fieldname": "column_break_uznl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dlt_template_id",
+   "fieldtype": "Data",
+   "label": "DLT Template ID"
+  },
+  {
+   "fieldname": "column_break_xcba",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "section_break_tjvl",
+   "fieldtype": "Section Break",
+   "label": "Content Preview"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "template_details_section",
+   "fieldtype": "Section Break",
+   "label": "Template Details"
+  },
+  {
+   "fieldname": "template_type",
+   "fieldtype": "Select",
+   "label": "Template Type",
+   "options": "\nImplicit\nExplicit"
+  },
+  {
+   "fieldname": "variable_field_section",
+   "fieldtype": "Section Break",
+   "label": "Variable Field"
+  },
+  {
+   "fieldname": "column_break_slmc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oiwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xnar",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "var_1_name",
+   "fieldtype": "Data",
+   "label": "Var 1 Name"
+  },
+  {
+   "fieldname": "var_2_name",
+   "fieldtype": "Data",
+   "label": "Var 2 Name"
+  },
+  {
+   "fieldname": "var_3_name",
+   "fieldtype": "Data",
+   "label": "Var 3 Name"
+  },
+  {
+   "fieldname": "var_4_name",
+   "fieldtype": "Data",
+   "label": "Var 4 Name"
+  },
+  {
+   "fieldname": "var_1_value",
+   "fieldtype": "Data",
+   "label": "Var 1 Value"
+  },
+  {
+   "fieldname": "var_2_value",
+   "fieldtype": "Data",
+   "label": "Var 2 Value"
+  },
+  {
+   "fieldname": "var_3_value",
+   "fieldtype": "Data",
+   "label": "Var 3 Value"
+  },
+  {
+   "fieldname": "var_4_value",
+   "fieldtype": "Data",
+   "label": "Var 4 Value"
+  },
+  {
+   "fieldname": "variable_count",
+   "fieldtype": "Int",
+   "label": "Variable Count",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-11 23:26:59.097563",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "SMS Template",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

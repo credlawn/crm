@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:employee_code",
+ "creation": "2024-10-25 15:11:02.085255",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_section",
+  "employee_name",
+  "employee_code",
+  "branch",
+  "column_break_ndfe",
+  "joining_date",
+  "department",
+  "column_break_bzlm",
+  "date_of_birth",
+  "designation",
+  "column_break_jzcj",
+  "gender",
+  "grade",
+  "personal_details_section",
+  "mobile_no",
+  "account_no",
+  "column_break_vwuq",
+  "email",
+  "ifsc_code",
+  "column_break_rczz",
+  "fixed_salary",
+  "employment_status",
+  "column_break_yuot",
+  "age",
+  "birthday_month",
+  "exit_details_section",
+  "tenure",
+  "payment_date",
+  "column_break_pigr",
+  "last_working_date",
+  "final_amount",
+  "column_break_sehj",
+  "fnf_status",
+  "remarks",
+  "column_break_wkeh",
+  "reason_for_leaving",
+  "payment_proof"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Int",
+   "label": "Employee Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ndfe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "Joining Date"
+  },
+  {
+   "fieldname": "column_break_bzlm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_jzcj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nFemale\nMale"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "\nCard\nOD\nMarket\nAll"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "\nSales\nOperations\nHR\nManagement"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "label": "Designation",
+   "options": "\nOffice Assistant\nRelationship Executive\nSr Relationship Executive\nOperation Executive\nSr Operation Executive\nHR Executive\nSr HR Executive\nRelationship Manager\nBranch Manager\nBusiness Head\nCEO"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "\nA-1\nE-1\nE-2\nM-1\nM-2\nD-1"
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "column_break_vwuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_rczz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yuot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "fixed_salary",
+   "fieldtype": "Currency",
+   "label": "Fixed Salary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "employment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employment Status",
+   "options": "\nActive\nResigned\nAbscond"
+  },
+  {
+   "fieldname": "exit_details_section",
+   "fieldtype": "Section Break",
+   "label": "Exit Details"
+  },
+  {
+   "fieldname": "last_working_date",
+   "fieldtype": "Date",
+   "label": "Last Working Date"
+  },
+  {
+   "fieldname": "column_break_pigr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sehj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wkeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason_for_leaving",
+   "fieldtype": "Small Text",
+   "label": "Reason For Leaving"
+  },
+  {
+   "fieldname": "tenure",
+   "fieldtype": "Data",
+   "label": "Tenure"
+  },
+  {
+   "fieldname": "birthday_month",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Birthday Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fnf_status",
+   "fieldtype": "Select",
+   "label": "FnF Status",
+   "options": "\nPending\nClosed"
+  },
+  {
+   "fieldname": "final_amount",
+   "fieldtype": "Currency",
+   "label": "Final Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "payment_proof",
+   "fieldtype": "Attach",
+   "label": "Payment Proof"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-05 17:00:46.778662",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Employee",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "employee_code",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name"
+}

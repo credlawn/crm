@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:vendor_code",
+ "creation": "2024-05-11 00:34:54.560370",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor_details_section",
+  "vendor_name",
+  "vendor_code",
+  "column_break_yisu",
+  "location",
+  "vendor_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vendor Details"
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Data",
+   "label": "Vendor Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_yisu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name",
+   "unique": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "vendor_status",
+   "fieldtype": "Select",
+   "label": "Vendor Status",
+   "options": "\nActive\nInactive"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-27 01:01:48.956152",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Vendor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "vendor_name"
+}

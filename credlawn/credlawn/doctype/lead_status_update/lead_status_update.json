@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-13 15:51:21.864523",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source",
+  "column_break_sent",
+  "lead_status",
+  "column_break_rprw",
+  "mobile_no",
+  "column_break_nnhi",
+  "reference_no",
+  "section_break_jobs",
+  "agent_number",
+  "column_break_wcgp",
+  "agent_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Source"
+  },
+  {
+   "fieldname": "column_break_sent",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference No",
+   "mandatory_depends_on": "eval:doc.lead_status == 'IP Approved'"
+  },
+  {
+   "fieldname": "column_break_rprw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Status",
+   "options": "\nIP Approved\nIP Rejected\nCNR\nFollow up\nNot Interested"
+  },
+  {
+   "fieldname": "column_break_nnhi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "section_break_jobs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agent_number",
+   "fieldtype": "Data",
+   "label": "Agent Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wcgp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-18 13:56:23.590586",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Lead Status Update",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

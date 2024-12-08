@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "autoname": "field:invoice_no",
+ "creation": "2024-11-10 12:29:40.463586",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "column_break_srfg",
+  "column_break_ihwy",
+  "column_break_tpzq",
+  "invoice_details_section",
+  "invoice_date",
+  "pre_gst_amount",
+  "tds_amount",
+  "column_break_kmow",
+  "invoice_type",
+  "gst_amount",
+  "net_amount",
+  "column_break_vxof",
+  "gst_percentage",
+  "total_bill_amount",
+  "column_break_mvlg",
+  "tds_percentage",
+  "round_off_amount",
+  "party_details_section",
+  "party_name",
+  "party_address",
+  "column_break_khwc",
+  "gst_no",
+  "state",
+  "state_code",
+  "credlawn_details_section",
+  "c_party_name",
+  "c_party_address",
+  "column_break_rldg",
+  "c_gst_no",
+  "c_state",
+  "c_state_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_kmow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "invoice_details_section",
+   "fieldtype": "Section Break",
+   "label": "Invoice Details"
+  },
+  {
+   "fieldname": "column_break_vxof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mvlg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_type",
+   "fieldtype": "Select",
+   "label": "Invoice Type",
+   "options": "\nSale\nPurchase"
+  },
+  {
+   "fieldname": "party_details_section",
+   "fieldtype": "Section Break",
+   "label": "Party Details"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_khwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No"
+  },
+  {
+   "fieldname": "party_address",
+   "fieldtype": "Small Text",
+   "label": "Party Address"
+  },
+  {
+   "fieldname": "gst_percentage",
+   "fieldtype": "Int",
+   "label": "GST %"
+  },
+  {
+   "fieldname": "tds_percentage",
+   "fieldtype": "Int",
+   "label": "TDS %"
+  },
+  {
+   "fieldname": "column_break_srfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ihwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tpzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pre_gst_amount",
+   "fieldtype": "Currency",
+   "label": "Pre GST Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "gst_amount",
+   "fieldtype": "Currency",
+   "label": "GST Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_bill_amount",
+   "fieldtype": "Currency",
+   "label": "Total Bill Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "round_off_amount",
+   "fieldtype": "Currency",
+   "label": "Round off Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tds_amount",
+   "fieldtype": "Currency",
+   "label": "TDS Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Net Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "state_code",
+   "fieldtype": "Int",
+   "label": "State Code"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "credlawn_details_section",
+   "fieldtype": "Section Break",
+   "label": "Credlawn Details"
+  },
+  {
+   "fieldname": "c_party_name",
+   "fieldtype": "Data",
+   "label": "Self Name"
+  },
+  {
+   "fieldname": "column_break_rldg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "c_gst_no",
+   "fieldtype": "Data",
+   "label": "Self GST No"
+  },
+  {
+   "fieldname": "c_party_address",
+   "fieldtype": "Small Text",
+   "label": "Self Address"
+  },
+  {
+   "fieldname": "c_state",
+   "fieldtype": "Data",
+   "label": "Self State"
+  },
+  {
+   "fieldname": "c_state_code",
+   "fieldtype": "Data",
+   "label": "Self State Code"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-10 13:18:03.439836",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Invoice",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

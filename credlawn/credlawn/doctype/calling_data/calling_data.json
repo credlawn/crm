@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:mobile_no",
+ "creation": "2024-12-03 20:29:33.499285",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "mobile_no",
+  "employee",
+  "lead_status",
+  "follow_up_date",
+  "column_break_kyyi",
+  "data_status",
+  "data_type",
+  "employee_name",
+  "email",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_kyyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "New",
+   "fieldname": "data_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Status",
+   "options": "\nNew\nHold"
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Select",
+   "label": "Data Type",
+   "options": "\nNormal Leads\nInterested Leads\nPre Approved Leads\nFollow Up Leads"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "link_filters": "[[\"Employee\",\"department\",\"!=\",\"Management\"]]",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "lead_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Status",
+   "options": "\nPending\nCNR\nNot Interested\nLogin Done\nFollow-up\nAlready Carded\nNew Lead"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow Up Date"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-06 16:46:34.204417",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Calling Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

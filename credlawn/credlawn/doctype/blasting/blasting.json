@@ -1,0 +1,329 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:link",
+ "creation": "2024-10-05 17:22:59.081684",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Other",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_status_section",
+  "lead_status",
+  "column_break_imnn",
+  "status_update_date",
+  "column_break_wbov",
+  "reference_no",
+  "column_break_pnjm",
+  "link",
+  "campaign_details_section",
+  "campaign_date",
+  "customer_name",
+  "column_break_hlma",
+  "cr_date",
+  "mobile_no",
+  "column_break_emvj",
+  "lead_type",
+  "city",
+  "column_break_sddv",
+  "campaign_type",
+  "data_source",
+  "section_break_cery",
+  "lead_assigned",
+  "column_break_yrbg",
+  "whatsapp_account",
+  "column_break_vtia",
+  "agent_number",
+  "column_break_flph",
+  "agent_name",
+  "column_break_sfbx",
+  "assigned_date",
+  "section_break_esbd",
+  "click_1",
+  "click_5",
+  "column_break_bcst",
+  "click_2",
+  "click_6",
+  "column_break_izmu",
+  "click_3",
+  "click_7",
+  "column_break_ihis",
+  "click_4",
+  "click_8"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign_details_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign Details"
+  },
+  {
+   "fieldname": "campaign_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Campaign Date"
+  },
+  {
+   "fieldname": "column_break_hlma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cr_date",
+   "fieldtype": "Datetime",
+   "label": "Latest Click"
+  },
+  {
+   "fieldname": "column_break_emvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Lead Type",
+   "options": "\nReply\nClick"
+  },
+  {
+   "fieldname": "column_break_sddv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "campaign_type",
+   "fieldtype": "Select",
+   "label": "Campaign Type",
+   "options": "\nWhatsApp\nRCS\nSMS\nEmail"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "lead_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Status"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile No",
+   "options": "Database"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Data Source"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "label": "Link",
+   "unique": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_cery",
+   "fieldtype": "Section Break",
+   "label": "Lead Assignment"
+  },
+  {
+   "default": "Hold",
+   "fieldname": "lead_assigned",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Assigned",
+   "options": "\nYes\nNo\nHold",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yrbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Credlawn India_new_lead_card",
+   "fieldname": "whatsapp_account",
+   "fieldtype": "Link",
+   "label": "Whatsapp Account",
+   "options": "Credlawn Whatsapp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "agent_number",
+   "fieldtype": "Data",
+   "label": "Agent Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vtia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_flph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sfbx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_status_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Status"
+  },
+  {
+   "fieldname": "column_break_imnn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wbov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pnjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_esbd",
+   "fieldtype": "Section Break",
+   "label": "Click History"
+  },
+  {
+   "fieldname": "click_1",
+   "fieldtype": "Datetime",
+   "label": "1st Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bcst",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "click_2",
+   "fieldtype": "Datetime",
+   "label": "2nd Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_izmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ihis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "click_3",
+   "fieldtype": "Datetime",
+   "label": "3rd Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "click_4",
+   "fieldtype": "Datetime",
+   "label": "4th Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "click_5",
+   "fieldtype": "Datetime",
+   "label": "5th Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "click_6",
+   "fieldtype": "Datetime",
+   "label": "6th Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "click_7",
+   "fieldtype": "Datetime",
+   "label": "7th Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "click_8",
+   "fieldtype": "Datetime",
+   "label": "8th Click",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status_update_date",
+   "fieldtype": "Date",
+   "label": "Status Update Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Reference No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "label": "Agent Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_date",
+   "fieldtype": "Date",
+   "label": "Lead Assigned Date",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-07 18:58:00.168715",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Blasting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name"
+}

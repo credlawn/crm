@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-08 14:21:10.207107",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "link_type",
+  "section_break_akjh",
+  "linkpart1",
+  "linkpart4",
+  "column_break_dyrq",
+  "linkpart2",
+  "linkpart5",
+  "column_break_tdmk",
+  "linkpart3",
+  "linkpart6"
+ ],
+ "fields": [
+  {
+   "fieldname": "link_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Link Type",
+   "options": "\nNormal\nTata\nSwiggy\nMarriott"
+  },
+  {
+   "fieldname": "section_break_akjh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "linkpart1",
+   "fieldtype": "Data",
+   "label": "Link Part 1"
+  },
+  {
+   "fieldname": "column_break_dyrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linkpart2",
+   "fieldtype": "Data",
+   "label": "Link Part 2"
+  },
+  {
+   "fieldname": "column_break_tdmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linkpart3",
+   "fieldtype": "Data",
+   "label": "Link Part 3"
+  },
+  {
+   "fieldname": "linkpart4",
+   "fieldtype": "Data",
+   "label": "Link Part 4"
+  },
+  {
+   "fieldname": "linkpart5",
+   "fieldtype": "Data",
+   "label": "Link Part 5"
+  },
+  {
+   "fieldname": "linkpart6",
+   "fieldtype": "Data",
+   "label": "Link Part 6"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-22 14:18:49.258633",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Partial Link",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

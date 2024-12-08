@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{link_for}-{link_type}-{dsa_code}-{sm_code}",
+ "creation": "2024-10-09 13:46:44.182458",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jlib",
+  "dsa_code",
+  "column_break_vmtb",
+  "link_type",
+  "column_break_pwbo",
+  "sm_code",
+  "column_break_gppv",
+  "link_for",
+  "section_break_ndxr",
+  "full_link",
+  "section_break_jabo",
+  "linkpart1",
+  "linkpart4",
+  "column_break_samo",
+  "linkpart2",
+  "linkpart5",
+  "column_break_pcag",
+  "linkpart3",
+  "linkpart6"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_link",
+   "fieldtype": "Small Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vmtb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ndxr",
+   "fieldtype": "Section Break",
+   "label": "Full Link"
+  },
+  {
+   "fieldname": "section_break_jlib",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_pwbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dsa_code",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "DSA Code",
+   "options": "\nXSBC\nXCLW",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Link Type",
+   "options": "\nNormal\nTata\nSwiggy\nMarriott",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sm_code",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SM Code",
+   "options": "\nP25719\nS42824",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gppv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "link_for",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Link For",
+   "options": "\nTeam\nCampaign\nVendor",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_jabo",
+   "fieldtype": "Section Break",
+   "label": "Link Parts"
+  },
+  {
+   "fieldname": "linkpart1",
+   "fieldtype": "Data",
+   "label": "Link Part 1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_samo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linkpart2",
+   "fieldtype": "Data",
+   "label": "Link Part 2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pcag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linkpart3",
+   "fieldtype": "Data",
+   "label": "Link Part 3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linkpart4",
+   "fieldtype": "Data",
+   "label": "Link Part 4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linkpart5",
+   "fieldtype": "Data",
+   "label": "Link Part 5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linkpart6",
+   "fieldtype": "Data",
+   "label": "Link Part 6",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-22 14:18:40.386415",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Bank Links",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
