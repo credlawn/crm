@@ -1,8 +1,5 @@
-// Copyright (c) 2024, Credlawn India Private Limited and contributors
-// For license information, please see license.txt
-
-// frappe.ui.form.on("Calling Data", {
-// 	refresh(frm) {
-
-// 	},
-// });
+frappe.ui.form.on('Calling Data', {
+    onload: function(frm) {
+        $(frm.wrapper).find('.help-box.small.text-muted').hide();
+    }
+});

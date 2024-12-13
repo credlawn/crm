@@ -92,7 +92,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-12-07 16:21:43.601948",
+ "modified": "2024-12-14 02:01:02.705511",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Credlawn",
@@ -115,21 +115,21 @@
    "type": "DocType"
   },
   {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} New Data",
+   "label": "Calling Data",
+   "link_to": "Calling Data",
+   "stats_filter": "[[\"Calling Data\",\"data_segment\",\"=\",\"New\",false]]",
+   "type": "DocType"
+  },
+  {
    "color": "Red",
    "doc_view": "List",
    "format": "{} Pending",
    "label": "Campaign Leads List",
    "link_to": "Blasting",
    "stats_filter": "[[\"Blasting\",\"lead_status\",\"=\",\"Pending\",false]]",
-   "type": "DocType"
-  },
-  {
-   "color": "Orange",
-   "doc_view": "List",
-   "format": "{} New Leads",
-   "label": "Calling Data",
-   "link_to": "Calling Data",
-   "stats_filter": "[[\"Calling Data\",\"lead_status\",\"=\",\"New Lead\",false]]",
    "type": "DocType"
   },
   {
