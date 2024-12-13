@@ -22,6 +22,7 @@
   "employee_name",
   "email",
   "follow_up_date",
+  "remarks",
   "column_break_kyyi",
   "data_status",
   "lead_status",
@@ -458,12 +459,18 @@
    "fieldtype": "Data",
    "label": "Status 10",
    "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks",
+   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-14 01:15:25.285984",
+ "modified": "2024-12-14 02:55:56.037467",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Calling Data",
