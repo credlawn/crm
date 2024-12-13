@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:reference_no",
+ "creation": "2024-11-30 13:07:45.591589",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_details_section",
+  "reference_no",
+  "customer_name",
+  "dsa_code",
+  "promo_code",
+  "column_break_yepc",
+  "decision_date",
+  "city",
+  "sourced_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No",
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_yepc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Decision Date"
+  },
+  {
+   "fieldname": "dsa_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "DSA Code"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "promo_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Promo Code"
+  },
+  {
+   "fieldname": "sourced_by",
+   "fieldtype": "Data",
+   "label": "Sourced By"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-30 13:28:37.029831",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Approved Dump",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

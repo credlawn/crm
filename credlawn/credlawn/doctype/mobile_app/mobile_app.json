@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:app_type",
+ "creation": "2024-12-06 00:34:34.039292",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "latest_version",
+  "url",
+  "app_type",
+  "column_break_ionw",
+  "change_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "latest_version",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Latest Version",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ionw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "Url"
+  },
+  {
+   "fieldname": "app_type",
+   "fieldtype": "Data",
+   "label": "app_type",
+   "unique": 1
+  },
+  {
+   "fieldname": "change_log",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Change Log"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-06 18:01:42.687264",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Mobile App",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

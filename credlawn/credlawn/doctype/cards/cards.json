@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "autoname",
+ "creation": "2024-10-08 20:27:24.856815",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sourcing_details_section",
+  "file_type",
+  "column_break_pmtx",
+  "sourcing_name",
+  "sourced_by",
+  "column_break_rqwf",
+  "login_date",
+  "column_break_vrek",
+  "bank_name",
+  "customer_details_section",
+  "customer_name",
+  "pin_code",
+  "column_break_ilvu",
+  "mobile_no",
+  "email",
+  "column_break_ilob",
+  "pan_no",
+  "ipa_status",
+  "column_break_kqvx",
+  "city",
+  "source",
+  "bank_details_section",
+  "reference_no",
+  "column_break_gfnk",
+  "column_break_ruox",
+  "column_break_ipjc"
+ ],
+ "fields": [
+  {
+   "fieldname": "login_date",
+   "fieldtype": "Date",
+   "label": "Login Date"
+  },
+  {
+   "fieldname": "column_break_pmtx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "HDFC- Credlawn",
+   "fieldname": "bank_name",
+   "fieldtype": "Select",
+   "label": "Bank Name",
+   "options": "HDFC- Credlawn\nHDFC- RKPL\nHDFC- Balaji"
+  },
+  {
+   "depends_on": "eval:(doc.__islocal)",
+   "fieldname": "sourced_by",
+   "fieldtype": "Dynamic Link",
+   "label": "Sourced By",
+   "options": "source",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "Team",
+   "fieldname": "file_type",
+   "fieldtype": "Select",
+   "label": "File Type",
+   "options": "\nTeam\nVendor\nCampaign"
+  },
+  {
+   "fieldname": "sourcing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sourcing Details"
+  },
+  {
+   "fieldname": "column_break_rqwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vrek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_ilvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "column_break_ilob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "Pan No"
+  },
+  {
+   "fieldname": "column_break_kqvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "ipa_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "IP Status",
+   "options": "Pending\nApproved\nDecline"
+  },
+  {
+   "default": "Employee",
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Source",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:!(doc.__islocal)",
+   "fieldname": "sourcing_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sourcing By"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "column_break_gfnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ruox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ipjc",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-28 12:31:32.626958",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Cards",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name"
+}

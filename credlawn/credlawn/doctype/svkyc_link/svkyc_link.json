@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-11-19 17:22:12.933087",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mobile_no",
+  "customer_name",
+  "pin_code",
+  "sales_actionable",
+  "data_code",
+  "column_break_vnnq",
+  "no_updated",
+  "promo_code",
+  "company_name",
+  "lead_allocated",
+  "column_break_paqu",
+  "reference_no",
+  "city",
+  "source",
+  "allocation_date",
+  "column_break_sdkw",
+  "creation_date",
+  "state",
+  "bkyc_status",
+  "section_break_lbjo",
+  "svkyc_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "column_break_vnnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_updated",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "No Updated"
+  },
+  {
+   "fieldname": "svkyc_link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "SVKYC Link"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "section_break_lbjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_paqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sdkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "label": "Creation Date"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "promo_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Promo Code"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "State"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "bkyc_status",
+   "fieldtype": "Data",
+   "label": "BKYC Status"
+  },
+  {
+   "fieldname": "sales_actionable",
+   "fieldtype": "Data",
+   "label": "Sales Actionable"
+  },
+  {
+   "fieldname": "lead_allocated",
+   "fieldtype": "Select",
+   "label": "Lead Allocated",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "allocation_date",
+   "fieldtype": "Date",
+   "label": "Allocation Date"
+  },
+  {
+   "fieldname": "data_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Data Code"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-12 15:09:51.010873",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "SVKYC Link",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "autoname": "autoname",
+ "creation": "2024-11-09 13:36:40.253618",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "campaign_details_section",
+  "customer_name",
+  "login_link",
+  "mob_no",
+  "message_status",
+  "template_id",
+  "column_break_yapa",
+  "mobile_no",
+  "campaign_date",
+  "bank_link",
+  "short_url_sms",
+  "sms_response",
+  "column_break_hogh",
+  "data_source",
+  "campaign_type",
+  "source",
+  "sms_template_name",
+  "sms_sent_timestamp",
+  "sms_error_message",
+  "section_break_kfpg",
+  "var_1_name",
+  "var_1_value",
+  "column_break_iyeq",
+  "var_2_name",
+  "var_2_value",
+  "column_break_qwye",
+  "var_3_name",
+  "var_3_value",
+  "column_break_ufdj",
+  "var_4_name",
+  "var_4_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "campaign_details_section",
+   "fieldtype": "Section Break",
+   "label": "Campaign Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_yapa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "login_link",
+   "fieldtype": "Read Only",
+   "label": "Login Link",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hogh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Data",
+   "label": "Data Source"
+  },
+  {
+   "fieldname": "campaign_date",
+   "fieldtype": "Date",
+   "label": "Campaign Date"
+  },
+  {
+   "fieldname": "campaign_type",
+   "fieldtype": "Data",
+   "label": "Campaign Type"
+  },
+  {
+   "fieldname": "mob_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Mob No"
+  },
+  {
+   "fieldname": "bank_link",
+   "fieldtype": "Data",
+   "label": "Bank Link",
+   "length": 300
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "message_status",
+   "fieldtype": "Data",
+   "label": "Message Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "short_url_sms",
+   "fieldtype": "Data",
+   "label": "Short Url SMS"
+  },
+  {
+   "fieldname": "section_break_kfpg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "var_1_name",
+   "fieldtype": "Data",
+   "label": "Var 1 Name"
+  },
+  {
+   "fieldname": "column_break_iyeq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "var_2_name",
+   "fieldtype": "Data",
+   "label": "Var 2 Name"
+  },
+  {
+   "fieldname": "column_break_qwye",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ufdj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "var_3_name",
+   "fieldtype": "Data",
+   "label": "Var 3 Name"
+  },
+  {
+   "fieldname": "var_4_name",
+   "fieldtype": "Data",
+   "label": "Var 4 Name"
+  },
+  {
+   "fieldname": "var_1_value",
+   "fieldtype": "Data",
+   "label": "Var 1 Value"
+  },
+  {
+   "fieldname": "var_2_value",
+   "fieldtype": "Data",
+   "label": "Var 2 Value"
+  },
+  {
+   "fieldname": "var_3_value",
+   "fieldtype": "Data",
+   "label": "Var 3 Value"
+  },
+  {
+   "fieldname": "var_4_value",
+   "fieldtype": "Data",
+   "label": "Var 4 Value"
+  },
+  {
+   "fieldname": "sms_template_name",
+   "fieldtype": "Data",
+   "label": "SMS Template Name"
+  },
+  {
+   "fieldname": "template_id",
+   "fieldtype": "Data",
+   "label": "Template ID"
+  },
+  {
+   "fieldname": "sms_response",
+   "fieldtype": "Data",
+   "label": "SMS Response"
+  },
+  {
+   "fieldname": "sms_sent_timestamp",
+   "fieldtype": "Data",
+   "label": "sms_sent_timestamp"
+  },
+  {
+   "fieldname": "sms_error_message",
+   "fieldtype": "Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-14 21:56:35.545649",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Campaigndata",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

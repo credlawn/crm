@@ -1,0 +1,440 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-10 19:11:01.715352",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_details_section",
+  "customer_name",
+  "channel",
+  "dispatch_date",
+  "column_break_dlvf",
+  "pan_no",
+  "case_type",
+  "pf_",
+  "column_break_egxx",
+  "lan_no",
+  "sourced_by",
+  "column_break_gxxf",
+  "case_status",
+  "mobile",
+  "section_break_imnb",
+  "loan_amount",
+  "column_break_bqbe",
+  "pf_deduction",
+  "column_break_fdoc",
+  "commission_percentage",
+  "column_break_shrm",
+  "vendor_percentage",
+  "column_break_xlrt",
+  "tds",
+  "section_break_xxnr",
+  "commission_before_gst",
+  "vendor_commission_amount",
+  "column_break_eymb",
+  "gst_amount",
+  "vendor_tds_amount",
+  "column_break_vjyk",
+  "commission_with_gst",
+  "vendor_net_amount",
+  "column_break_hptm",
+  "tds_amount",
+  "vendor_actual_paid_amount",
+  "column_break_uvua",
+  "net_commission_amount",
+  "commission_credit_amount",
+  "sharing_details_section",
+  "balance_amount_with_gst",
+  "column_break_kikl",
+  "balance_amount_without_gst",
+  "column_break_bmla",
+  "earned_gst_amount",
+  "column_break_mrkd",
+  "extra_tds_amount",
+  "column_break_kyeg",
+  "net_profit_amount",
+  "section_break_vsut",
+  "business_month",
+  "column_break_lyyx",
+  "gst_status",
+  "column_break_qiqw",
+  "balance_amount_status",
+  "column_break_bpqw",
+  "actual_paid_to_vendor",
+  "actual_paid_to_laxmi",
+  "column_break_utvu",
+  "payment_date_vendor",
+  "payment_date_laxmi"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "label": "Channel",
+   "options": "\nFast Credit\nCredlawn"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "column_break_dlvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "Pan No"
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Case Type",
+   "options": "\nCredlawn\nVendor\nLakshmi"
+  },
+  {
+   "fieldname": "pf_",
+   "fieldtype": "Float",
+   "label": "PF %",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_egxx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lan_no",
+   "fieldtype": "Data",
+   "label": "Lan No"
+  },
+  {
+   "fieldname": "sourced_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sourced By"
+  },
+  {
+   "fieldname": "column_break_gxxf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_status",
+   "fieldtype": "Select",
+   "label": "Case Status",
+   "options": "\nDispatched"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "section_break_imnb",
+   "fieldtype": "Section Break",
+   "label": "Payout Details"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Loan Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_bqbe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pf_deduction",
+   "fieldtype": "Currency",
+   "label": "PF Deduction",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_fdoc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "commission_percentage",
+   "fieldtype": "Float",
+   "label": "Commission % ",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_shrm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "vendor_percentage",
+   "fieldtype": "Float",
+   "label": "Vendor %",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_xlrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "5",
+   "fieldname": "tds",
+   "fieldtype": "Float",
+   "label": "TDS %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xxnr",
+   "fieldtype": "Section Break",
+   "label": "Commission Details"
+  },
+  {
+   "fieldname": "commission_before_gst",
+   "fieldtype": "Currency",
+   "label": "Commission Before GST",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_commission_amount",
+   "fieldtype": "Currency",
+   "label": "Vendor Commission Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_eymb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gst_amount",
+   "fieldtype": "Currency",
+   "label": "GST Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_tds_amount",
+   "fieldtype": "Currency",
+   "label": "Vendor TDS Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vjyk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_with_gst",
+   "fieldtype": "Currency",
+   "label": "Commission With GST",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_net_amount",
+   "fieldtype": "Currency",
+   "label": "Vendor Net Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hptm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tds_amount",
+   "fieldtype": "Currency",
+   "label": "TDS Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "vendor_actual_paid_amount",
+   "fieldtype": "Currency",
+   "label": "Vendor Actual Paid Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_uvua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_commission_amount",
+   "fieldtype": "Currency",
+   "label": "Net Commission Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_amount_with_gst",
+   "fieldtype": "Currency",
+   "label": "Balance Amount With GST",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sharing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sharing Details"
+  },
+  {
+   "fieldname": "balance_amount_without_gst",
+   "fieldtype": "Currency",
+   "label": "Balance Amount Without GST",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kikl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "earned_gst_amount",
+   "fieldtype": "Currency",
+   "label": "Earned GST Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bmla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "extra_tds_amount",
+   "fieldtype": "Currency",
+   "label": "Extra TDS Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mrkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_profit_amount",
+   "fieldtype": "Currency",
+   "label": "Net Profit Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kyeg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_vsut",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "business_month",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Business Month",
+   "options": "\nSep'24\nOct'24\nNov'24\nDec'24\nJan'25\nFeb'25\nMar'25\nApr'25\nMay'25\nJun'25\nJul'25\nAug'25\nSep'25\nOct'25"
+  },
+  {
+   "fieldname": "column_break_lyyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "gst_status",
+   "fieldtype": "Select",
+   "label": "GST Status",
+   "options": "Pending\nPaid"
+  },
+  {
+   "fieldname": "column_break_qiqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "balance_amount_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Balance Amount Status",
+   "options": "Paid\nPending"
+  },
+  {
+   "fieldname": "column_break_bpqw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_utvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_credit_amount",
+   "fieldtype": "Currency",
+   "label": "Commission Credit Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "actual_paid_to_vendor",
+   "fieldtype": "Currency",
+   "label": "Actual Paid to Vendor"
+  },
+  {
+   "fieldname": "actual_paid_to_laxmi",
+   "fieldtype": "Currency",
+   "label": "Actual Paid to Laxmi"
+  },
+  {
+   "fieldname": "payment_date_vendor",
+   "fieldtype": "Date",
+   "label": "Payment Date Vendor"
+  },
+  {
+   "fieldname": "payment_date_laxmi",
+   "fieldtype": "Date",
+   "label": "Payment Date Laxmi"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-18 11:34:50.608358",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Overdraft",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name"
+}

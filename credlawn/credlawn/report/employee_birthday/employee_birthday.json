@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-10-30 01:26:35.108432",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-10-30 03:18:02.801097",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Employee Birthday",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "\n    SELECT \n        employee_name,\n        DATE_FORMAT(date_of_birth, '%d %M') AS formatted_date_of_birth\n    FROM \n        `tabEmployee`\n    WHERE \n        date_of_birth IS NOT NULL\n    ORDER BY \n        date_of_birth;\n    \"\"\"\n    return frappe.db.sql(query, as_dict=True)\n",
+ "ref_doctype": "Employee",
+ "report_name": "Employee Birthday",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

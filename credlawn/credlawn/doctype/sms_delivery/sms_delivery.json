@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 15:01:48.649126",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_id",
+  "sender_id",
+  "mobile_no",
+  "amount",
+  "column_break_twih",
+  "status_code",
+  "timestamp",
+  "delivery_status",
+  "failed_reason",
+  "section_break_ofok",
+  "sender_headers",
+  "section_break_ludt",
+  "response_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "status_code",
+   "fieldtype": "Int",
+   "label": "Status Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_twih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Time Stamp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ofok",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sender_headers",
+   "fieldtype": "JSON",
+   "label": "Sender Headers",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ludt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "response_data",
+   "fieldtype": "JSON",
+   "label": "Response Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delivery_status",
+   "fieldtype": "Data",
+   "label": "Delivery Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failed_reason",
+   "fieldtype": "Data",
+   "label": "Failed Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sender_id",
+   "fieldtype": "Data",
+   "label": "Sender ID",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-16 17:14:07.165460",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "SMS Delivery",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

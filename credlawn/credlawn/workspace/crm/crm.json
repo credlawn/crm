@@ -1,0 +1,43 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"XsBfCM4Vtk\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Welcome Team Credlawn !</b></span>\",\"col\":12}},{\"id\":\"JS9zAM_5Fj\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"njUv9su2vb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":3}},{\"id\":\"MbNr4YYdaz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cards\",\"col\":3}}]",
+ "creation": "2024-10-26 11:29:54.147952",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 2,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "CRM",
+ "links": [],
+ "modified": "2024-11-15 11:59:31.334183",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "CRM",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Build",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Employee"
+  }
+ ],
+ "sequence_id": 7.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{}",
+   "label": "Cards",
+   "link_to": "Cards",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "CRM"
+}

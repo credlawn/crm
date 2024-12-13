@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "field:agent_id",
+ "creation": "2024-11-14 09:45:01.706937",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agent_name",
+  "agent_id",
+  "column_break_vmfj",
+  "allow_lead",
+  "column_break_qjer",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "agent_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Agent Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vmfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile No",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_qjer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allow_lead",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Allow Lead ?",
+   "options": "\nNo\nYes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agent_id",
+   "fieldtype": "Link",
+   "label": "Agent_id",
+   "link_filters": "[[\"Employee\",\"department\",\"!=\",\"Management\"]]",
+   "options": "Employee",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-14 10:12:15.248505",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Agent Number",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "agent_name"
+}

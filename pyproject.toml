@@ -1,0 +1,23 @@
+[project]
+name = "credlawn"
+authors = [
+    { name = "Credlawn India Private Limited", email = "info@credlawn.com"}
+]
+description = "A platform designed to simplify and streamline processes."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    "python-magic~=0.4.24",
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=14.0.0"

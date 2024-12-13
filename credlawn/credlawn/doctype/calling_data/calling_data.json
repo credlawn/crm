@@ -1,0 +1,339 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:mobile_no",
+ "creation": "2024-12-03 20:29:33.499285",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "update_summary_section",
+  "usage_count",
+  "data_segment",
+  "column_break_wiix",
+  "update_count",
+  "update_date",
+  "update_time",
+  "customer_details_section",
+  "customer_name",
+  "mobile_no",
+  "employee",
+  "employee_name",
+  "email",
+  "follow_up_date",
+  "column_break_kyyi",
+  "data_status",
+  "lead_status",
+  "data_type",
+  "data_code",
+  "employees",
+  "allocation_history_section",
+  "date_1",
+  "date_2",
+  "date_3",
+  "date_4",
+  "date_5",
+  "date_6",
+  "date_7",
+  "date_8",
+  "date_9",
+  "date_10",
+  "column_break_kquh",
+  "employee_1",
+  "employee_2",
+  "employee_3",
+  "employee_4",
+  "employee_5",
+  "employee_6",
+  "employee_7",
+  "employee_8",
+  "employee_9",
+  "employee_10"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_kyyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Data Type",
+   "options": "\nNormal Leads\nInterested Leads\nPre Approved Leads"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "link_filters": "[[\"Employee\",\"department\",\"!=\",\"Management\"]]",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name"
+  },
+  {
+   "default": "New Lead",
+   "fieldname": "lead_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Status",
+   "options": "\nPending\nCNR\nNot Interested\nLogin Done\nFollow-up\nAlready Carded\nNew Lead"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow Up Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "update_date",
+   "fieldtype": "Datetime",
+   "label": "Update Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "update_time",
+   "fieldtype": "Time",
+   "hidden": 1,
+   "label": "Update Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "update_count",
+   "fieldtype": "Int",
+   "label": "Update Count",
+   "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "data_status",
+   "fieldtype": "Data",
+   "label": "Data Status"
+  },
+  {
+   "fieldname": "data_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Code"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Employees",
+   "options": "Employee Assignment"
+  },
+  {
+   "fieldname": "allocation_history_section",
+   "fieldtype": "Section Break",
+   "label": "Allocation History"
+  },
+  {
+   "fieldname": "date_1",
+   "fieldtype": "Date",
+   "label": "1st",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kquh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_2",
+   "fieldtype": "Date",
+   "label": "2nd",
+   "read_only": 1
+  },
+  {
+   "default": "New",
+   "fieldname": "data_segment",
+   "fieldtype": "Select",
+   "label": "Data Segment",
+   "options": "\nNew\nUsed"
+  },
+  {
+   "default": "0",
+   "fieldname": "usage_count",
+   "fieldtype": "Int",
+   "label": "Usage Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_3",
+   "fieldtype": "Date",
+   "label": "3rd",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_4",
+   "fieldtype": "Date",
+   "label": "4th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_5",
+   "fieldtype": "Date",
+   "label": "5th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_6",
+   "fieldtype": "Date",
+   "label": "6th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_7",
+   "fieldtype": "Date",
+   "label": "7th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_8",
+   "fieldtype": "Date",
+   "label": "8th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_9",
+   "fieldtype": "Date",
+   "label": "9th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_10",
+   "fieldtype": "Date",
+   "label": "10th",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_1",
+   "fieldtype": "Data",
+   "label": "Employee 1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_2",
+   "fieldtype": "Data",
+   "label": "Employee 2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_3",
+   "fieldtype": "Data",
+   "label": "Employee 3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_4",
+   "fieldtype": "Data",
+   "label": "Employee 4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_5",
+   "fieldtype": "Data",
+   "label": "Employee 5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_6",
+   "fieldtype": "Data",
+   "label": "Employee 6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_7",
+   "fieldtype": "Data",
+   "label": "Employee 7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_8",
+   "fieldtype": "Data",
+   "label": "Employee 8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_9",
+   "fieldtype": "Data",
+   "label": "Employee 9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_10",
+   "fieldtype": "Data",
+   "label": "Employee 10",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "update_summary_section",
+   "fieldtype": "Section Break",
+   "label": "Update Summary"
+  },
+  {
+   "fieldname": "column_break_wiix",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-14 00:27:14.629089",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Calling Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
