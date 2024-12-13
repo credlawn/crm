@@ -3,6 +3,10 @@ import frappe
 from frappe.utils import now
 
 class CallingData(Document):    
+    def validate(self):
+        if self.customer_name:
+            self.customer_name = self.customer_name.title().strip()
+
     @frappe.whitelist()
     def after_insert(self):
         self.update_employee_name()
