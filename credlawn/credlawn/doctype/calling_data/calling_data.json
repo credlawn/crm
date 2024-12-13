@@ -102,7 +102,6 @@
    "fieldname": "lead_status",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Lead Status",
    "options": "\nPending\nCNR\nNot Interested\nLogin Done\nFollow-up\nAlready Carded\nNew Lead"
   },
@@ -176,6 +175,7 @@
    "default": "New",
    "fieldname": "data_segment",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Data Segment",
    "options": "\nNew\nUsed"
   },
@@ -312,7 +312,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-14 00:27:14.629089",
+ "modified": "2024-12-14 00:51:23.683529",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Calling Data",
