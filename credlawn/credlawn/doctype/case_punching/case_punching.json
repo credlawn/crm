@@ -11,12 +11,14 @@
   "incomplete_reason",
   "reference_no",
   "email",
+  "case_source",
   "column_break_qhrn",
   "mobile_no",
   "pan_no",
   "punching_date",
   "rejection_reason",
   "update_date",
+  "data_owner",
   "column_break_hldh",
   "employee_code",
   "kyc_status",
@@ -128,12 +130,25 @@
    "fieldtype": "Int",
    "label": "Update Count",
    "read_only": 1
+  },
+  {
+   "fieldname": "case_source",
+   "fieldtype": "Select",
+   "label": "Case Source",
+   "options": "\nApp Data\nReference",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_owner",
+   "fieldtype": "Data",
+   "label": "Data Owner",
+   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-13 16:42:32.097883",
+ "modified": "2024-12-14 12:58:23.678469",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Case Punching",

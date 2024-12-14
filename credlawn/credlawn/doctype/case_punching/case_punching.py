@@ -26,6 +26,9 @@ class CasePunching(Document):
     def after_insert(self):
         self.update_employee_name()
 
+        # Match mobile_no with Calling Data
+        self.match_mobile_no_in_calling_data()
+
     @frappe.whitelist()
     def on_update(self):
         self.update_employee_name()
@@ -35,6 +38,14 @@ class CasePunching(Document):
         frappe.db.set_value("Case Punching", self.name, "update_count", current_count + 1)
         self.reload()
         
+    def match_mobile_no_in_calling_data(self):
+        calling_data = frappe.get_all("Calling Data", filters={"mobile_no": self.mobile_no}, fields=["employee_name"])
+
+        if calling_data:
+            frappe.db.set_value("Case Punching", self.name, "case_source", "App Data")
+            frappe.db.set_value("Case Punching", self.name, "data_owner", calling_data[0].employee_name)
+        else:
+            frappe.db.set_value("Case Punching", self.name, "case_source", "Reference")
 
     def update_employee_name(self):
         employee = frappe.get_doc("Employee", self.employee_code)
@@ -44,5 +55,3 @@ class CasePunching(Document):
 
         if not self.punching_date:
             frappe.db.set_value("Case Punching", self.name, "punching_date", nowdate())
-
-        
