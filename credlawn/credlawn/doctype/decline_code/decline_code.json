@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:defect_code",
+ "creation": "2024-12-15 12:05:05.776803",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "defect_code",
+  "column_break_sivk",
+  "decline_type",
+  "column_break_cynb",
+  "defect_group_code",
+  "column_break_isia",
+  "remarks",
+  "section_break_oezr",
+  "description",
+  "column_break_fucj",
+  "sales_action_required"
+ ],
+ "fields": [
+  {
+   "fieldname": "defect_code",
+   "fieldtype": "Data",
+   "label": "Defect Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_sivk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "decline_type",
+   "fieldtype": "Data",
+   "label": "Decline Type"
+  },
+  {
+   "fieldname": "column_break_cynb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "defect_group_code",
+   "fieldtype": "Data",
+   "label": "Defect Group Code"
+  },
+  {
+   "fieldname": "column_break_isia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_oezr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sales_action_required",
+   "fieldtype": "Data",
+   "label": "Sales Action Required"
+  },
+  {
+   "fieldname": "column_break_fucj",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-15 12:11:27.207169",
+ "modified_by": "Administrator",
+ "module": "Credlawn",
+ "name": "Decline Code",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
