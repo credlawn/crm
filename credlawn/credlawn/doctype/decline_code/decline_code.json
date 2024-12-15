@@ -7,11 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "defect_code",
-  "column_break_sivk",
   "decline_type",
-  "column_break_cynb",
+  "column_break_sivk",
   "defect_group_code",
-  "column_break_isia",
+  "column_break_cynb",
   "remarks",
   "section_break_oezr",
   "description",
@@ -44,10 +43,6 @@
    "label": "Defect Group Code"
   },
   {
-   "fieldname": "column_break_isia",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "remarks",
    "fieldtype": "Data",
    "label": "Remarks"
@@ -74,7 +69,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-15 12:11:27.207169",
+ "modified": "2024-12-15 12:43:58.464623",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Decline Code",
