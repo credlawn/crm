@@ -72,7 +72,14 @@
   "status_7",
   "status_8",
   "status_9",
-  "status_10"
+  "status_10",
+  "helper_section",
+  "ip_status",
+  "reference_no",
+  "incomplete_reason",
+  "column_break_ovjp",
+  "kyc_status",
+  "rejection_reason"
  ],
  "fields": [
   {
@@ -465,12 +472,46 @@
    "fieldtype": "Data",
    "label": "Remarks",
    "read_only": 1
+  },
+  {
+   "fieldname": "helper_section",
+   "fieldtype": "Section Break",
+   "label": "Helper"
+  },
+  {
+   "fieldname": "ip_status",
+   "fieldtype": "Data",
+   "label": "IP Status"
+  },
+  {
+   "fieldname": "column_break_ovjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kyc_status",
+   "fieldtype": "Data",
+   "label": "KYC Status"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "rejection_reason",
+   "fieldtype": "Data",
+   "label": "Rejection Reason"
+  },
+  {
+   "fieldname": "incomplete_reason",
+   "fieldtype": "Data",
+   "label": "Incomplete Reason"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-14 02:55:56.037467",
+ "modified": "2024-12-16 18:51:20.292930",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Calling Data",
