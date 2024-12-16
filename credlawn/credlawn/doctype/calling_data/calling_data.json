@@ -474,6 +474,7 @@
    "read_only": 1
   },
   {
+   "collapsible": 1,
    "fieldname": "helper_section",
    "fieldtype": "Section Break",
    "label": "Helper"
@@ -511,7 +512,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-16 18:51:20.292930",
+ "modified": "2024-12-16 19:26:02.731941",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Calling Data",

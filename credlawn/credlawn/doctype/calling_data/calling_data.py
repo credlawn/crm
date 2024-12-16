@@ -24,6 +24,9 @@ class CallingData(Document):
         self.update_data_status()
         self.update_employee_name()
 
+        if self.lead_status == "Login Done":
+            self.create_case_punching_record()
+
         self.reload()
 
     def update_employee_name(self):
@@ -56,3 +59,25 @@ class CallingData(Document):
             if not getattr(self, f"status_{i}"):
                 frappe.db.set_value("Calling Data", self.name, f"status_{i}", self.lead_status)
                 break
+
+    def create_case_punching_record(self):
+        case_punching = frappe.get_doc({
+            "doctype": "Case Punching",
+            "customer_name": self.customer_name,
+            "mobile_no": self.mobile_no,
+            "employee_code": self.employee,
+            "email": self.email,
+        })
+
+        if self.ip_status:
+            case_punching.ip_status = self.ip_status
+        if self.kyc_status:
+            case_punching.kyc_status = self.kyc_status
+        if self.incomplete_reason:
+            case_punching.incomplete_reason = self.incomplete_reason
+        if self.reference_no:
+            case_punching.reference_no = self.reference_no
+        if self.rejection_reason:
+            case_punching.rejection_reason = self.rejection_reason
+
+        case_punching.insert(ignore_permissions=True)

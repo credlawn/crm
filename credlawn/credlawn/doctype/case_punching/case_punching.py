@@ -11,7 +11,7 @@ class CasePunching(Document):
         if self.reference_no:
             if not re.match(reference_pattern, self.reference_no):
                 frappe.throw("Invalid Reference No. Please try again.")
-            self.reference_no = str(self.reference_no).upper().strip()
+            self.reference_no = str(self.reference_no)
             self.name = self.reference_no
 
         if not self.mobile_no:
@@ -21,6 +21,9 @@ class CasePunching(Document):
         
         if self.customer_name:
             self.customer_name = self.customer_name.title().strip()
+
+        if self.name:
+            self.name = self.name.upper().strip()
 
     @frappe.whitelist()
     def after_insert(self):
