@@ -80,7 +80,7 @@ class Adobe(Document):
                 return
 
         if self.lc2_code:
-            blasting_match = frappe.get_all("Blasting", filters={"lc2_code": self.lc2_code.upper()}, limit=1)
+            blasting_match = frappe.get_all("Blasting", filters={"name": self.lc2_code.upper()}, limit=1)
             if blasting_match:
                 frappe.db.set_value(self.doctype, self.name, 'lead_owner', "Credlawn")
             else:
