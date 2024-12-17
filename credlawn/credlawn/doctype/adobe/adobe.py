@@ -7,9 +7,11 @@ class Adobe(Document):
     def after_insert(self):
         self.update_fields()
         self.set_duplicate_finder()
+        self.match_lc_codes_and_update_owner()
 
     def on_update(self):
         self.update_fields()
+        self.match_lc_codes_and_update_owner()
         self.reload()
 
     def update_fields(self):
@@ -63,3 +65,23 @@ class Adobe(Document):
         
         duplicate_finder = f"{customer_name}{city}{pin_code}".lower().replace(' ', '')
         frappe.db.set_value(self.doctype, self.name, 'duplicate_finder', duplicate_finder)
+
+    def match_lc_codes_and_update_owner(self):
+        if self.lc1_code:
+            dse_list_match = frappe.get_all("DSE List", filters={"name": self.lc1_code}, limit=1)
+            if dse_list_match:
+                frappe.db.set_value(self.doctype, self.name, 'lead_owner', "Credlawn")
+                return
+
+        if self.lc2_code:
+            dse_list_match = frappe.get_all("DSE List", filters={"name": self.lc2_code}, limit=1)
+            if dse_list_match:
+                frappe.db.set_value(self.doctype, self.name, 'lead_owner', "Credlawn")
+                return
+
+        if self.lc2_code:
+            blasting_match = frappe.get_all("Blasting", filters={"lc2_code": self.lc2_code.upper()}, limit=1)
+            if blasting_match:
+                frappe.db.set_value(self.doctype, self.name, 'lead_owner', "Credlawn")
+            else:
+                frappe.db.set_value(self.doctype, self.name, 'lead_owner', "Other")

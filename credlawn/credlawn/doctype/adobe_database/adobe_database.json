@@ -10,6 +10,13 @@
   "change_log",
   "column_break_vcoy",
   "change_flag_date",
+  "section_break_yism",
+  "employee_name",
+  "column_break_znef",
+  "mobile_no",
+  "column_break_zejz",
+  "case_source",
+  "column_break_usto",
   "customer_details_section",
   "creation_date",
   "final_decision_date",
@@ -71,12 +78,14 @@
   "other_details_section",
   "login_month",
   "duplicate_finder",
+  "adobe_decision_date",
   "column_break_fseq",
   "decision_month",
   "file_type",
   "column_break_sfxt",
   "sm_code",
   "change_flag",
+  "lead_owner",
   "column_break_uucc",
   "company_code",
   "reference_no"
@@ -444,12 +453,56 @@
    "fieldtype": "Date",
    "label": "Change Flag Date",
    "read_only": 1
+  },
+  {
+   "fieldname": "adobe_decision_date",
+   "fieldtype": "Data",
+   "label": "Adobe Decision Date"
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Data",
+   "label": "Lead Owner"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Customer Mobile No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_yism",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_znef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zejz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_usto",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_source",
+   "fieldtype": "Data",
+   "label": "Case Source",
+   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 15:08:02.636152",
+ "modified": "2024-12-17 18:50:34.036232",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe Database",

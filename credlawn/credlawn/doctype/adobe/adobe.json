@@ -60,6 +60,7 @@
   "lg_code",
   "column_break_yrws",
   "dsa_code",
+  "lead_owner",
   "column_break_zekv",
   "lc1_code",
   "column_break_qrew",
@@ -417,12 +418,17 @@
    "fieldname": "final_decision_date",
    "fieldtype": "Date",
    "label": "Decision Date"
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Data",
+   "label": "Lead Owner"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-17 20:00:12.221371",
+ "modified": "2024-12-17 18:59:13.599652",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe",
