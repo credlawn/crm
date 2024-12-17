@@ -74,7 +74,6 @@ def update_adobe_database_records():
                     # Set the change flag and change flag date
                     frappe.db.set_value('Adobe Database', existing_record, 'change_flag', 'Yes')
                     frappe.db.set_value('Adobe Database', existing_record, 'change_flag_date', nowdate())
-                frappe.db.delete('Adobe', adobe['name'])
                 else:
                     if update_data:
                         new_data = {"reference_no": adobe.get('reference_no')}
@@ -83,9 +82,9 @@ def update_adobe_database_records():
                             "doctype": "Adobe Database",
                             **new_data
                         })
-                        
                         doc.insert()
                 
+                # Now delete the record from Adobe
                 frappe.db.delete('Adobe', adobe['name'])
 
         except Exception as e:
