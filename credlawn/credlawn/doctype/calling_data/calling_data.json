@@ -164,8 +164,9 @@
   {
    "default": "New",
    "fieldname": "data_status",
-   "fieldtype": "Data",
-   "label": "Data Status"
+   "fieldtype": "Select",
+   "label": "Data Status",
+   "options": "\nNew\nAllocated\nHold"
   },
   {
    "fieldname": "data_code",
@@ -513,7 +514,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-18 10:35:12.280917",
+ "modified": "2024-12-18 14:33:56.862468",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Calling Data",

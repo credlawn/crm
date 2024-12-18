@@ -155,7 +155,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "Credlawn India_new_lead_card",
    "fieldname": "whatsapp_account",
    "fieldtype": "Link",
    "label": "Whatsapp Account",
@@ -292,7 +291,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-07 18:58:00.168715",
+ "modified": "2024-12-18 14:09:47.452481",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Blasting",

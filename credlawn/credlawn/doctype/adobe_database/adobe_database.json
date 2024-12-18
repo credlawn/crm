@@ -79,6 +79,7 @@
   "login_month",
   "duplicate_finder",
   "adobe_decision_date",
+  "final_stage",
   "column_break_fseq",
   "decision_month",
   "file_type",
@@ -499,12 +500,18 @@
    "fieldtype": "Data",
    "label": "Case Source",
    "read_only": 1
+  },
+  {
+   "fieldname": "final_stage",
+   "fieldtype": "Select",
+   "label": "Final Stage",
+   "options": "\nApproved\nCurable\nNon Curable\nDuplicate\nRejected"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-18 12:48:45.825430",
+ "modified": "2024-12-18 14:57:08.175792",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe Database",
