@@ -132,6 +132,7 @@
    "fieldname": "lead_status",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Lead Status",
    "options": "\nPending\nCNR\nNot Interested\nLogin Done\nFollow-up\nAlready Carded\nNew Lead"
   },
@@ -512,7 +513,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-16 19:26:02.731941",
+ "modified": "2024-12-18 10:35:12.280917",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Calling Data",

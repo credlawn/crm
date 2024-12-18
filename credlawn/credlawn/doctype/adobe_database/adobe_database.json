@@ -320,6 +320,8 @@
   {
    "fieldname": "final_decision",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Final Decision"
   },
   {
@@ -502,7 +504,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-17 18:50:34.036232",
+ "modified": "2024-12-18 12:48:45.825430",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe Database",
@@ -520,6 +522,15 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
   }
  ],
  "sort_field": "modified",
