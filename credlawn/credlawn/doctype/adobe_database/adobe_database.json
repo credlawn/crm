@@ -79,17 +79,18 @@
   "login_month",
   "duplicate_finder",
   "adobe_decision_date",
-  "final_stage",
   "column_break_fseq",
   "decision_month",
   "file_type",
+  "final_stage",
   "column_break_sfxt",
   "sm_code",
   "change_flag",
-  "lead_owner",
+  "action_required",
   "column_break_uucc",
   "company_code",
-  "reference_no"
+  "reference_no",
+  "lead_owner"
  ],
  "fields": [
   {
@@ -506,12 +507,18 @@
    "fieldtype": "Select",
    "label": "Final Stage",
    "options": "\nApproved\nCurable\nNon Curable\nDuplicate\nRejected"
+  },
+  {
+   "fieldname": "action_required",
+   "fieldtype": "Data",
+   "label": "Action Required",
+   "read_only": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-18 14:57:08.175792",
+ "modified": "2024-12-18 16:28:49.314730",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe Database",
