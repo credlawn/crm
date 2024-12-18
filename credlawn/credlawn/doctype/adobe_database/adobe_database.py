@@ -24,10 +24,11 @@ class AdobeDatabase(Document):
             frappe.db.set_value('Adobe Database', self.name, 'case_source', 'NA')
         
         if self.decline_code:
-            decline_code_record = frappe.db.get_value('Decline Code', filters={'name': self.decline_code}, fieldname='final_remarks')
-            decline_code_action = frappe.db.get_value('Decline Code', filters={'name': self.decline_code}, fieldname='sales_action_required')
+            decline_code_data = frappe.db.get_value('Decline Code', filters={'name': self.decline_code}, fieldname=['final_remarks', 'sales_action_required'])
             
-            if decline_code_record:
-                frappe.db.set_value('Adobe Database', self.name, 'final_stage', decline_code_record)
-                frappe.db.set_value('Adobe Database', self.name, 'action_required', decline_code_action)
+            
+            if decline_code_data:
+                final_remarks, sales_action_required = decline_code_data
+                frappe.db.set_value('Adobe Database', self.name, 'final_stage', final_remarks)
+                frappe.db.set_value('Adobe Database', self.name, 'action_required', sales_action_required)
 
