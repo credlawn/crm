@@ -11,14 +11,14 @@ class AdobeDatabase(Document):
         self.reload()
 
     def update_employee_name_and_decline_code(self):
-        case_punching = frappe.db.get_all('Case Punching', filters={'reference_no': self.reference_no}, fields=['employee_name', 'mobile_no', 'case_source', 'lead_owner'])
+        case_punching = frappe.db.get_all('Case Punching', filters={'reference_no': self.reference_no}, fields=['employee_name', 'mobile_no', 'case_source', 'email'])
         
         if case_punching:
             case_punching_record = case_punching[0]
             frappe.db.set_value('Adobe Database', self.name, 'employee_name', case_punching_record.get('employee_name', 'Not Mapped'))
             frappe.db.set_value('Adobe Database', self.name, 'mobile_no', case_punching_record.get('mobile_no', 'NA'))
             frappe.db.set_value('Adobe Database', self.name, 'case_source', case_punching_record.get('case_source', 'NA'))
-            frappe.db.set_value('Adobe Database', self.name, 'lead_owner', case_punching_record.get('lead_owner', 'NA'))
+            frappe.db.set_value('Adobe Database', self.name, 'lead_owner', case_punching_record.get('email', 'NA'))
         else:
             frappe.db.set_value('Adobe Database', self.name, 'employee_name', 'Not Mapped')
             frappe.db.set_value('Adobe Database', self.name, 'mobile_no', 'NA')
