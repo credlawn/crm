@@ -24,6 +24,8 @@ frappe.listview_settings['Blasting'] = {
 
                     var mobile_no = selected_item['mobile_no'];
                     var customer_name = selected_item['customer_name'];
+                    var data_code = selected_item['campaign_date'] + selected_item['lead_type'];
+                    var lead_id = selected_item['name'];  // The unique identifier for the Blasting record
 
                     if (!customer_name) {
                         frappe.log_error(__('Customer name is missing in the selected record at index ' + index), 'Transfer Lead Error');
@@ -39,27 +41,48 @@ frappe.listview_settings['Blasting'] = {
                         },
                         callback: function(data) {
                             if (data.message && data.message.length === 0) {
+                                // Insert new record into Calling Data
                                 frappe.call({
                                     method: 'frappe.client.insert',
                                     args: {
                                         doc: {
                                             doctype: 'Calling Data',
                                             customer_name: customer_name,
-                                            mobile_no: mobile_no
+                                            mobile_no: mobile_no,
+                                            data_code: data_code
                                         }
                                     },
                                     callback: function() {
-                                        successCount++;
+                                        // After the lead is successfully transferred, update lead_assigned to 'Yes'
+                                        frappe.call({
+                                            method: 'frappe.client.set_value',
+                                            args: {
+                                                doctype: 'Blasting',
+                                                name: lead_id,  // The Blasting record to be updated
+                                                fieldname: 'lead_assigned',
+                                                value: 'Yes'
+                                            },
+                                            callback: function() {
+                                                successCount++;
 
-                                        if (successCount + existingCount === selected_items.length) {
-                                            frappe.msgprint(__('Successfully Transferred ' + successCount + ' Records and ' + existingCount + ' Records already exist.'));
-                                        }
+                                                // Notify user when all records have been processed
+                                                if (successCount + existingCount === selected_items.length) {
+                                                    frappe.msgprint(__('Successfully Transferred ' + successCount + ' Records and ' + existingCount + ' Records already exist.'));
+                                                }
+                                            },
+                                            error: function(error) {
+                                                frappe.msgprint(__('Error updating lead_assigned field: ' + error.message));
+                                                frappe.log_error(__('Error updating lead_assigned field: ' + error.message), 'Transfer Lead Error');
+                                            }
+                                        });
                                     },
                                     error: function(error) {
+                                        frappe.msgprint(__('Error during lead transfer: ' + error.message));
                                         frappe.log_error(__('Error during lead transfer: ' + error.message), 'Transfer Lead Error');
                                     }
                                 });
                             } else {
+                                // If the lead already exists in Calling Data
                                 existingCount++;
 
                                 if (successCount + existingCount === selected_items.length) {
@@ -68,6 +91,7 @@ frappe.listview_settings['Blasting'] = {
                             }
                         },
                         error: function(error) {
+                            frappe.msgprint(__('Error fetching Calling Data: ' + error.message));
                             frappe.log_error(__('Error fetching Calling Data: ' + error.message), 'Transfer Lead Error');
                         }
                     });
