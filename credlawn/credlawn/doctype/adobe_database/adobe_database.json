@@ -136,6 +136,8 @@
   {
    "fieldname": "promo_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Promo Code"
   },
   {
@@ -207,10 +209,10 @@
   {
    "fieldname": "inprocess_classification",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Inprocess Classification"
   },
   {
-   "collapsible": 1,
    "fieldname": "kyc_flow_section",
    "fieldtype": "Section Break",
    "label": "KYC Flow"
@@ -268,7 +270,6 @@
    "label": "Product Code"
   },
   {
-   "collapsible": 1,
    "fieldname": "decline_flow_section",
    "fieldtype": "Section Break",
    "label": "Decline Flow"
@@ -332,7 +333,6 @@
    "label": "Pin Code"
   },
   {
-   "collapsible": 1,
    "fieldname": "dsa_details_section",
    "fieldtype": "Section Break",
    "label": "DSA Details"
@@ -375,7 +375,6 @@
    "label": "LC-2 Code"
   },
   {
-   "collapsible": 1,
    "fieldname": "other_details_section",
    "fieldtype": "Section Break",
    "label": "Other Details"
@@ -402,8 +401,6 @@
   {
    "fieldname": "file_type",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "File Type"
   },
   {
@@ -471,6 +468,8 @@
   {
    "fieldname": "employee_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Employee Name",
    "read_only": 1
   },
@@ -518,7 +517,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-18 16:28:49.314730",
+ "modified": "2024-12-19 14:35:53.355291",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe Database",
