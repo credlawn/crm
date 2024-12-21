@@ -461,11 +461,6 @@
    "label": "Adobe Decision Date"
   },
   {
-   "fieldname": "lead_owner",
-   "fieldtype": "Data",
-   "label": "Lead Owner"
-  },
-  {
    "fieldname": "employee_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -512,12 +507,17 @@
    "fieldtype": "Data",
    "label": "Action Required",
    "read_only": 1
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Data",
+   "label": "Lead Owner"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-19 14:35:53.355291",
+ "modified": "2024-12-19 17:49:41.136527",
  "modified_by": "Administrator",
  "module": "Credlawn",
  "name": "Adobe Database",
