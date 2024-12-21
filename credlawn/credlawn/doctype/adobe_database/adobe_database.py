@@ -28,7 +28,7 @@ class AdobeDatabase(Document):
         if self.decline_code:
             decline_code_data = frappe.db.get_value('Decline Code', filters={'name': self.decline_code}, fieldname=['final_remarks', 'sales_action_required'])
 
-            if decline_code_data and final_stage != "Rejected":
+            if decline_code_data and self.final_stage != "Rejected":
                 final_remarks, sales_action_required = decline_code_data
                 frappe.db.set_value('Adobe Database', self.name, 'final_stage', final_remarks)
                 frappe.db.set_value('Adobe Database', self.name, 'action_required', sales_action_required)
